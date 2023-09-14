@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="form.css" media="screen">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="titulo">Peneira Joinville</h1>
+        <p id="subtitulo">Informe suas Características</p>
+        <br>
+    </div>
+
+
+    <form>
+
+        <fieldset class="group">
+
+            <div class="espacin">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+
+            <div class="espacin">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+
+        <div class="espacin">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="espacin">
+            <label><strong>Em qual posição você joga?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Armador
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Ala-armador
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Ala
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Ala-pivô
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Pivô
+            </label>
+        </div>
+
+
+        <div class="espacin">
+            <label for="idade"><strong>Idade</strong></label>
+            <select id="idade" required>
+                <option selected disabled value="">Selecione</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+
+            </select>
+        </div>
+
+        <fieldset class="group">
+
+            <div id="check">
+                <label><strong>Selecione suas maiores qualidades numa partida:</strong></label><br><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1"> Armação</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2"> Arremesso</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                <label for="tecnologia3"> Controle de bola</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                <label for="tecnologia4"> Defesa</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                <label for="tecnologia5"> Infiltração</label>
+            </div>
+        </fieldset>
+        <div class="espacin" id="video">
+            <label for="email"><strong>Link vídeo melhores momentos:</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="espacin">
+            <label for="email"><strong>Tem alguma deficiencia? Se sim, qual?</strong></label>
+            <div class="espacin">
+                <label><strong></strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Sim
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Não
+                </label>
+            </div>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="espacin">
+            <br>
+            <label for="experiencia"><strong>Conte sobre sua experiência com o basquete: </strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+
+        <button class="botao" type="submit" onsubmit="">Concluído</button>
+
+    </form>
+
+</body>
+
+</html>
